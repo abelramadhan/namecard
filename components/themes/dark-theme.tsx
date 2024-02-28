@@ -1,6 +1,7 @@
 import { CornerDownRightIcon } from "lucide-react";
 import { Illustration } from "../ui/glowing-stars";
 import Link from "next/link";
+import { PropsWithChildren } from "react";
 
 const Front = (props: CardProps) => {
   return (
@@ -33,4 +34,13 @@ const Back = (props: CardProps) => {
   );
 };
 
-export { Front, Back };
+const Backdrop = (props: CardProps & PropsWithChildren) => {
+  return (
+    <div className="h-full w-full bg-neutral-900 bg-dot-white/[0.1]">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-neutral-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+      {props.children}
+    </div>
+  );
+};
+
+export { Front, Back, Backdrop };

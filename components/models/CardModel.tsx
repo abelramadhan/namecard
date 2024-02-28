@@ -13,11 +13,11 @@ import { ThreeElements, useFrame } from "@react-three/fiber";
 import { Group, Object3DEventMap, MathUtils } from "three";
 import { useMediaQuery } from "@uidotdev/usehooks";
 
-const CARD_WIDTH_LG = 180;
-const CARD_HEIGHT_LG = 120;
+const CARD_WIDTH_LG = 190;
+const CARD_HEIGHT_LG = 130;
 
-const CARD_WIDTH_SM = 120;
-const CARD_HEIGHT_SM = 180;
+const CARD_WIDTH_SM = 130;
+const CARD_HEIGHT_SM = 190;
 
 const transformToScale = (
   widthPx: number,
@@ -54,8 +54,8 @@ export default function CardModel(props: {
     );
     group.current.position.y = MathUtils.lerp(
       group.current.position.y,
-      (-2 + Math.sin(t / 2)) / 2,
-      0.1
+      (-3 + Math.sin(t / 3)) / 3,
+      0.02
     );
   });
 

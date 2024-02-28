@@ -110,7 +110,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
 const Star = ({ index }: { index: number }) => {
   return (
     <div
-      className={cn("bg-[#666] h-[1px] w-[1px] rounded-full relative z-20")}
+      className={cn("bg-gray-400 h-[1px] w-[1px] rounded-full relative z-20")}
     ></div>
   );
 };
