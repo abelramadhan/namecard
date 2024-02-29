@@ -29,6 +29,7 @@ const transformToScale = (
 export default function CardModel(props: {
   front: ReactNode;
   back: ReactNode;
+  color: string;
 }) {
   const group = useRef<Group<Object3DEventMap>>(new Group());
   const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
@@ -116,7 +117,7 @@ export default function CardModel(props: {
             position={[0, -0.03, 0]}
             scale={transformToScale(size.width, size.height)}
           >
-            <meshBasicMaterial color={"#374151"} />
+            <meshBasicMaterial color={props.color} />
             <boxGeometry />
           </mesh>
         </group>

@@ -15,11 +15,13 @@ const Front = (props: CardProps) => {
           <h4 className="text-gray-500 text-xs">{props.title}</h4>
         </div>
         <div className="p-4">
-          <Link href={props.link}>
-            <div className="bg-white p-2 rounded-full z-2 hover:bg-gray-200 transition-colors cursor-pointer">
-              <CornerDownRightIcon className="text-neutral-900" size={18} />
-            </div>
-          </Link>
+          {props.primary_link && (
+            <Link href={props.primary_link}>
+              <div className="bg-white p-2 rounded-full z-2 hover:bg-gray-200 transition-colors cursor-pointer">
+                <CornerDownRightIcon className="text-neutral-900" size={18} />
+              </div>
+            </Link>
+          )}
         </div>
       </div>
     </div>
@@ -36,11 +38,13 @@ const Back = (props: CardProps) => {
 
 const Backdrop = (props: CardProps & PropsWithChildren) => {
   return (
-    <div className="h-full w-full bg-neutral-900 bg-dot-white/[0.1]">
+    <div className="h-full w-full bg-neutral-900 bg-dot-white/[0.1] font-mono">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-neutral-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       {props.children}
     </div>
   );
 };
 
-export { Front, Back, Backdrop };
+const ModelColor = "#374151";
+
+export { Front, Back, Backdrop, ModelColor };

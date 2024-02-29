@@ -77,12 +77,6 @@
   }
 }
 
-@layer base {
-  html {
-    font-family: "JetBrains Mono", monospace;
-  }
-}
-
 .wrapper {
   transform: scale(0.5);
   transform-origin: top left;

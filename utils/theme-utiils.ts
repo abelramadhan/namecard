@@ -7,7 +7,9 @@ function isValidTheme(inputValue: any): ThemeType | null {
     "Back" in inputValue &&
     typeof inputValue.Back === "function" &&
     "Backdrop" in inputValue &&
-    typeof inputValue.Backdrop === "function"
+    typeof inputValue.Backdrop === "function" &&
+    "ModelColor" in inputValue &&
+    typeof "ModelColor" === "string"
   ) {
     return inputValue as ThemeType;
   } else {
