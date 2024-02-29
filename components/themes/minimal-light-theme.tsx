@@ -42,8 +42,10 @@ const Back = (props: CardProps) => {
           </div>
           <ul className="space-y-1 text-end z-10">
             {props.contact_info &&
-              Object.values(props.contact_info).map((item) => (
-                <li className="text-neutral-400 text-xs">{item}</li>
+              Object.values(props.contact_info).map((item, index) => (
+                <li key={index} className="text-neutral-400 text-xs">
+                  {item}
+                </li>
               ))}
           </ul>
         </div>
