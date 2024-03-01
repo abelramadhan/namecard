@@ -19,7 +19,7 @@ const input: Tables<"user-detail"> = {
 export default function Home() {
   const theme = isValidTheme(defaultTheme);
   return (
-    <main className="relative min-w-[100dvw] min-h-[100dvw] bg-background  overflow-x-clip">
+    <main className="relative min-w-[100dvw] min-h-[100dvh] bg-background  overflow-x-clip">
       <nav className="w-full h-[8vh] sm:px-[15%] px-[5%] py-3 flex flex-row justify-between items-center border-b">
         <h1 className="text-2xl font-extrabold text-foreground">Namecard</h1>
         <Button size={"sm"}>Dashboard</Button>
