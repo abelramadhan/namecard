@@ -20,11 +20,11 @@ export default function Home() {
   const theme = isValidTheme(defaultTheme);
   return (
     <main className="relative min-w-[100dvw] min-h-[100dvh] bg-background  overflow-x-clip">
-      <nav className="w-full h-[8vh] sm:px-[15%] px-[5%] py-3 flex flex-row justify-between items-center border-b">
+      <nav className="w-full h-[8dvh] sm:px-[15%] px-[5%] py-3 flex flex-row justify-between items-center border-b">
         <h1 className="text-2xl font-extrabold text-foreground">Namecard</h1>
         <Button size={"sm"}>Dashboard</Button>
       </nav>
-      <section className="relative w-full h-[92vh] sm:px-[15%] px-[5%] flex flex-row justify-start sm:items-center items-end dark:bg-dot-white/30 bg-dot-black/30">
+      <section className="relative w-full h-[92dvh] sm:px-[15%] px-[5%] flex flex-row justify-start sm:items-center items-end dark:bg-dot-white/30 bg-dot-black/30">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         <div className="flex-1 space-y-4 z-50 my-4 max-w-96 sm:p-0 p-4 sm:bg-transparent bg-background/30 sm:backdrop-blur-none backdrop-blur-sm rounded sm:border-none border">
           <div className="space-y-2">
