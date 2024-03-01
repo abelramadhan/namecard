@@ -31,7 +31,7 @@ export default function Home() {
             <h1 className="sm:text-6xl text-3xl font-bold drop-shadow-sm">
               Stand out from the crowd!
             </h1>
-            <h4 className="text-lg text-muted-foreground drop-shadow-sm">
+            <h4 className="sm:text-lg text-sm sm:w-full w-[75%] text-muted-foreground drop-shadow-sm">
               With your own personal namecard made just for you
             </h4>
           </div>
