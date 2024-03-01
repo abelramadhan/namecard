@@ -1,6 +1,4 @@
-import { CornerDownRightIcon, ScaleIcon } from "lucide-react";
-import { Illustration } from "../ui/glowing-stars";
-import Link from "next/link";
+import { ScaleIcon } from "lucide-react";
 import { PropsWithChildren } from "react";
 
 const Wrapper = (props: PropsWithChildren) => {

@@ -16,14 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body>
-        {children}
-        <div className="fixed bottom-0 w-full flex items-center justify-center p-4">
-          <p className="text-muted/30 font-light text-xs">
-            <span className="font-semibold">namecards</span> by abelramadhan
-          </p>
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
