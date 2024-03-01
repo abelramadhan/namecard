@@ -41,6 +41,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+        <div className="w-full flex items-center justify-center p-4 bg-muted">
+          <p className="text-muted-foreground font-light text-xs">
+            <span className="font-semibold">namecards</span> by abelramadhan
+          </p>
+        </div>
+      </section>
       <div className="absolute w-[500px] h-full sm:right-32  -right-32 top-0 z-0">
         <CanvasWrapper>
           <CardModel

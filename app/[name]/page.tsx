@@ -40,16 +40,23 @@ export default async function Page({ params }: Props) {
   if (!components) return redirect("/");
 
   return (
-    <div className="h-[100dvh] w-[100dvw] flex items-center justify-center overflow-clip">
-      <components.Backdrop>
-        <CanvasWrapper>
-          <CardModel
-            front={<components.Front {...input} />}
-            back={<components.Back {...input} />}
-            color={components.ModelColor}
-          />
-        </CanvasWrapper>
-      </components.Backdrop>
-    </div>
+    <>
+      <div className="h-[100dvh] w-[100dvw] flex items-center justify-center overflow-clip">
+        <components.Backdrop>
+          <CanvasWrapper>
+            <CardModel
+              front={<components.Front {...input} />}
+              back={<components.Back {...input} />}
+              color={components.ModelColor}
+            />
+          </CanvasWrapper>
+        </components.Backdrop>
+      </div>
+      <div className="fixed bottom-0 w-full flex items-center justify-center p-4">
+        <p className="text-muted/30 font-light text-xs">
+          <span className="font-semibold">namecards</span> by abelramadhan
+        </p>
+      </div>
+    </>
   );
 }
